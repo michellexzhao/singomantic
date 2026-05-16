@@ -1,0 +1,24 @@
+{
+  "name": "Singomantic Flutter Dev",
+  "image": "ghcr.io/cirruslabs/flutter:stable",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Dart-Code.flutter",
+        "Dart-Code.dart-code",
+        "Nash.awesome-flutter-snippets",
+        "usernamehw.errorlens",
+        "eamodio.gitlens"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "Dart-Code.dart-code",
+        "dart.flutterSdkPath": "/sdks/flutter",
+        "dart.lineLength": 100
+      }
+    }
+  },
+  "forwardPorts": [8080],
+  "postCreateCommand": "flutter pub get",
+  "remoteUser": "root"
+}
